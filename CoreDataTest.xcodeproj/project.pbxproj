@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020E9C41CE96E30005B65C4 /* FindViewController.m */; };
+		5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020E9C71CE96E89005B65C4 /* ThreadViewController.m */; };
+		5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020E9CA1CE96EE6005B65C4 /* SortViewController.m */; };
+		5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020E9D01CE99A65005B65C4 /* TestTableViewController.m */; };
+		5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */; };
 		505373621CACCD6400EADF55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373611CACCD6400EADF55 /* main.m */; };
 		505373651CACCD6400EADF55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373641CACCD6400EADF55 /* AppDelegate.m */; };
-		505373681CACCD6400EADF55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373671CACCD6400EADF55 /* ViewController.m */; };
 		5053736B1CACCD6400EADF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505373691CACCD6400EADF55 /* Main.storyboard */; };
 		5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5053736C1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld */; };
 		505373701CACCD6400EADF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5053736F1CACCD6400EADF55 /* Assets.xcassets */; };
@@ -36,12 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5020E9C31CE96E30005B65C4 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		5020E9C41CE96E30005B65C4 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		5020E9C61CE96E89005B65C4 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		5020E9C71CE96E89005B65C4 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		5020E9C91CE96EE6005B65C4 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		5020E9CA1CE96EE6005B65C4 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
+		5020E9CF1CE99A65005B65C4 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		5020E9D01CE99A65005B65C4 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		5020E9D21CE99DDF005B65C4 /* FirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
+		5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
 		5053735D1CACCD6300EADF55 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505373611CACCD6400EADF55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		505373631CACCD6400EADF55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		505373641CACCD6400EADF55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		505373661CACCD6400EADF55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		505373671CACCD6400EADF55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5053736A1CACCD6400EADF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5053736D1CACCD6400EADF55 /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		5053736F1CACCD6400EADF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,9 +117,17 @@
 			children = (
 				505373631CACCD6400EADF55 /* AppDelegate.h */,
 				505373641CACCD6400EADF55 /* AppDelegate.m */,
-				505373661CACCD6400EADF55 /* ViewController.h */,
-				505373671CACCD6400EADF55 /* ViewController.m */,
+				5020E9C91CE96EE6005B65C4 /* SortViewController.h */,
+				5020E9CA1CE96EE6005B65C4 /* SortViewController.m */,
 				505373691CACCD6400EADF55 /* Main.storyboard */,
+				5020E9C31CE96E30005B65C4 /* FindViewController.h */,
+				5020E9C41CE96E30005B65C4 /* FindViewController.m */,
+				5020E9C61CE96E89005B65C4 /* ThreadViewController.h */,
+				5020E9C71CE96E89005B65C4 /* ThreadViewController.m */,
+				5020E9CF1CE99A65005B65C4 /* TestTableViewController.h */,
+				5020E9D01CE99A65005B65C4 /* TestTableViewController.m */,
+				5020E9D21CE99DDF005B65C4 /* FirstTableViewCell.h */,
+				5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */,
 				5053736F1CACCD6400EADF55 /* Assets.xcassets */,
 				505373711CACCD6400EADF55 /* LaunchScreen.storyboard */,
 				505373741CACCD6400EADF55 /* Info.plist */,
@@ -273,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */,
 				5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */,
-				505373681CACCD6400EADF55 /* ViewController.m in Sources */,
+				5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */,
+				5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */,
+				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
+				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
 				505373621CACCD6400EADF55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +524,7 @@
 				5053738F1CACCD6400EADF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505373901CACCD6400EADF55 /* Build configuration list for PBXNativeTarget "CoreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +533,7 @@
 				505373921CACCD6400EADF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		505373931CACCD6400EADF55 /* Build configuration list for PBXNativeTarget "CoreDataTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +542,7 @@
 				505373951CACCD6400EADF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
