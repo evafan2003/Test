@@ -33,6 +33,15 @@
     NSString *str = [_arr componentsJoinedByString:@","];
     _orignal.text = [NSString stringWithFormat:@"排序前数组：%@",str];
     
+    _runtimeMethodClass = [Router runtimeClass:@"RuntimeMethod"];
+    if (_runtimeMethodClass) {
+        
+        [_runtimeMethodClass performSelector:@selector(aaaa:bbbb:)withObject:@"haha" withObject:@"hoho"];
+        
+//        [_runtimeMethodClass performSelector:@selector(stringmethod:intmethod:)withObject:@"haha" withObject:@"1"];
+
+    }
+    
 }
 
 //------------------这是另外一个版本------------------------------------------
@@ -210,10 +219,18 @@
     NSLog(@"冒泡排序前：%@",array);
     for (int i=0; i<array.count; i++) {
         //-------------------------------------------
-        
+        for (int j=i+1; j<array.count; j++) {
+            if ([array[i] intValue]>[array[j] intValue]) {
+                NSString *str = array[i];
+                array[i] = array[j];
+                array[j] = str;
+            }
+        }
         //-------------------------------------------
     }
     NSLog(@"冒泡排序后：%@",array);
+    NSString *str = [array componentsJoinedByString:@","];
+    _sorted.text = [NSString stringWithFormat:@"排序后数组：%@",str];
 }
 
 //选择

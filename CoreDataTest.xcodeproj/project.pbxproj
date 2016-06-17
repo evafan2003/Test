@@ -21,6 +21,8 @@
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
 		9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */; };
+		F77A0B8A1D123EDB002607E4 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B891D123EDB002607E4 /* Router.m */; };
+		F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		505373881CACCD6400EADF55 /* CoreDataTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestUITests.m; sourceTree = "<group>"; };
 		5053738A1CACCD6400EADF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53309BF6EB1329D295B6AC2D /* Pods-CoreDataTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F77A0B881D123EDB002607E4 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		F77A0B891D123EDB002607E4 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeMethod.h; sourceTree = "<group>"; };
+		F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +128,13 @@
 		5053735F1CACCD6400EADF55 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				F77A0B871D123EB0002607E4 /* Router */,
 				505373631CACCD6400EADF55 /* AppDelegate.h */,
 				505373641CACCD6400EADF55 /* AppDelegate.m */,
 				5020E9C91CE96EE6005B65C4 /* SortViewController.h */,
 				5020E9CA1CE96EE6005B65C4 /* SortViewController.m */,
+				F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */,
+				F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */,
 				505373691CACCD6400EADF55 /* Main.storyboard */,
 				5020E9C31CE96E30005B65C4 /* FindViewController.h */,
 				5020E9C41CE96E30005B65C4 /* FindViewController.m */,
@@ -185,6 +194,15 @@
 				4FA1D910A7D9C36D819F07C2 /* Pods-CoreDataTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F77A0B871D123EB0002607E4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F77A0B881D123EDB002607E4 /* Router.h */,
+				F77A0B891D123EDB002607E4 /* Router.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,7 +393,9 @@
 				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
 				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
+				F77A0B8A1D123EDB002607E4 /* Router.m in Sources */,
 				505373621CACCD6400EADF55 /* main.m in Sources */,
+				F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

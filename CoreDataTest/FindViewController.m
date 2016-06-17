@@ -135,9 +135,6 @@
 //递归遍历多维数组(广度)
 -(void) newbianli:(NSArray *) arr {
     
-    if(arr.count<1)
-        return;
-    
     NSMutableArray *tmparr = [NSMutableArray array];
     
     for(int i=0;i<arr.count;i++){
@@ -149,7 +146,8 @@
             NSLog(@"%@",arr[i]);
         }
     }
-    [self newbianli:[NSArray arrayWithArray:tmparr]];
+    if(tmparr.count<1)
+        [self newbianli:[NSArray arrayWithArray:tmparr]];
 }
 
 /*
@@ -161,5 +159,49 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//九九乘法表
+- (IBAction)chengfabiao:(id)sender {
+    
+    int x,y,z;
+    
+    for (x=1; x<=9; x++) {
+        
+        for (y=1; y<=x; y++) {
+            
+            z = x*y;
+            NSLog(@"%d*%d=%d",x,y,z);
+        }
+        NSLog(@"\n");
+    }
+}
+
+-(void) erfen:(NSMutableArray *)array element:(NSString *)ele {
+    
+    NSInteger low=0;
+    NSInteger high = array.count-1;
+    NSInteger mid;
+    
+    while (low<=high) {
+
+        mid = (low+high)/2;
+        
+        if ([array[mid] intValue] == [ele intValue]) {
+            
+            NSLog(@"找到");
+            return;
+            
+        } else if ([array[mid] intValue] > [ele intValue]) {
+            
+            high = mid+1;
+            
+        } else {
+            low = mid+1;
+        }
+        
+    }
+    NSLog(@"没找到");
+    
+}
 
 @end

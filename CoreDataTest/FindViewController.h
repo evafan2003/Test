@@ -10,4 +10,7 @@
 
 @interface FindViewController : UIViewController
 
+//九九乘法表
+- (IBAction)chengfabiao:(id)sender;
+
 @end
