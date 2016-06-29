@@ -92,6 +92,13 @@
                                     <rect key="frame" x="47" y="323" width="280" height="72"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUH-Vf-WgB">
+                                <rect key="frame" x="164" y="547" width="46" height="30"/>
+                                <state key="normal" title="push"/>
+                                <connections>
+                                    <segue destination="w4d-W4-ygk" kind="push" id="K5A-jj-Fqn"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="排序后数组" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUO-j2-4iN">
                                 <rect key="frame" x="50" y="437" width="283" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -101,17 +108,21 @@
                                     <rect key="frame" x="47" y="437" width="280" height="72"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUH-Vf-WgB">
-                                <rect key="frame" x="164" y="547" width="46" height="30"/>
-                                <state key="normal" title="push"/>
-                                <connections>
-                                    <segue destination="w4d-W4-ygk" kind="push" id="K5A-jj-Fqn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="排序" id="aEi-9S-Fkf"/>
+                    <navigationItem key="navigationItem" title="排序" id="aEi-9S-Fkf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="9Qv-fb-LKv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nui-kg-I9n">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="二维码"/>
+                                <connections>
+                                    <segue destination="2Lh-cB-vRY" kind="push" id="GMy-JW-mfg"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="orignal" destination="2qv-Ma-a0A" id="aye-E2-WA1"/>
                         <outlet property="sorted" destination="KUO-j2-4iN" id="GK7-Uc-MKL"/>
@@ -120,6 +131,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1077.75" y="-2215.125"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="4aC-GF-b3m">
+            <objects>
+                <viewController id="2Lh-cB-vRY" customClass="QRCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ppi-Dr-W41"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQB-Gu-lM6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ljo-kC-5yK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="扫描结果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="xgv-EA-teA">
+                                <rect key="frame" x="163" y="471" width="48" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMI-lr-ZRH">
+                                <rect key="frame" x="52" y="171" width="270" height="270"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zul-tw-FhZ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="reN-6P-xlD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6rc-Av-kfL">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="扫一扫"/>
+                                <connections>
+                                    <action selector="scanPressed:" destination="2Lh-cB-vRY" eventType="touchUpInside" id="vO5-SU-S30"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="zMI-lr-ZRH" id="Ojj-PV-QTN"/>
+                        <outlet property="scanResultLabel" destination="xgv-EA-teA" id="a6f-4d-7J1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX4-Cg-AoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355.5" y="-2945.5"/>
         </scene>
         <!--Test Table View Controller-->
         <scene sceneID="a7R-fZ-EA4">
