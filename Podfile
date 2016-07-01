@@ -4,5 +4,6 @@ target "CoreDataTest" do
 
 pod 'MBProgressHUD'
 #pod 'HMQRCodeScanner'
+#pod 'KINWebBrowser'
 end
 

@@ -11,6 +11,9 @@
 @interface QRCodeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *scanResultLabel;
+
+@property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) NSTimer *fakeProgressTimer;
 @end
 
 @implementation QRCodeViewController
@@ -18,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createFakeProgress];
+    
     // 1.创建滤镜
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     
@@ -119,6 +124,37 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
 }
 - (IBAction)scanPressed:(id)sender {
 
+}
+
+
+
+#pragma mark - Fake Progress Bar Control (UIWebView) 创建进度条
+
+-(void) createFakeProgress {
+    self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+    [self.progressView setTrackTintColor:[UIColor colorWithWhite:1.0f alpha:0.0f]];
+    [self.progressView setFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height-self.progressView.frame.size.height, self.view.frame.size.width, self.progressView.frame.size.height)];
+    [self.progressView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin];
+    [self.navigationController.navigationBar addSubview:self.progressView];
+    [self fakeProgressViewStartLoading];
+}
+
+- (void)fakeProgressViewStartLoading {
+    [self.progressView setProgress:0.0f animated:NO];
+    [self.progressView setAlpha:1.0f];
+    
+    if(!self.fakeProgressTimer) {
+        self.fakeProgressTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f/60.0f target:self selector:@selector(fakeProgressTimerDidFire:) userInfo:nil repeats:YES];
+    }
+}
+
+- (void)fakeProgressTimerDidFire:(id)sender {
+    CGFloat increment = 0.005/(self.progressView.progress + 0.2);
+
+        CGFloat progress = (self.progressView.progress < 0.75f) ? self.progressView.progress + increment : self.progressView.progress + 0.0005;
+        if(self.progressView.progress < 0.95) {
+            [self.progressView setProgress:progress animated:YES];
+        }
 }
 /*
 #pragma mark - Navigation

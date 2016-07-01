@@ -21,8 +21,6 @@
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
 		9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */; };
-		F70560951D23D2A100DB0617 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70560941D23D2A100DB0617 /* Reveal.framework */; };
-		F70560991D23D5FF00DB0617 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F70560981D23D5FF00DB0617 /* libz.tbd */; };
 		F77A0B8A1D123EDB002607E4 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B891D123EDB002607E4 /* Router.m */; };
 		F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */; };
 		F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */; };
@@ -89,9 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70560991D23D5FF00DB0617 /* libz.tbd in Frameworks */,
 				9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */,
-				F70560951D23D2A100DB0617 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +574,6 @@
 					"-framework",
 					"\"CoreGraphics\"",
 				);
-				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosh.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s arm64";
