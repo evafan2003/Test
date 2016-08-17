@@ -24,6 +24,14 @@
 		F77A0B8A1D123EDB002607E4 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B891D123EDB002607E4 /* Router.m */; };
 		F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */; };
 		F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */; };
+		F7E77E071D641449007EDED5 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E77E061D641449007EDED5 /* PlayVideoViewController.m */; };
+		F7FC61311D6487E900C1D101 /* PBJVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */; };
+		F7FC61321D6487E900C1D101 /* PBJVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC61301D6487E900C1D101 /* PBJVideoView.m */; };
+		F7FC61341D6487F200C1D101 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61331D6487F200C1D101 /* AVFoundation.framework */; };
+		F7FC61361D6487FC00C1D101 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */; };
+		F7FC61381D64880800C1D101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61371D64880800C1D101 /* UIKit.framework */; };
+		F7FC613A1D64881300C1D101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61391D64881300C1D101 /* Foundation.framework */; };
+		F7FC613D1D64885600C1D101 /* PBJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC613C1D64885600C1D101 /* PBJViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,19 @@
 		F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeMethod.m; sourceTree = "<group>"; };
 		F7E6EFDA1D1B87F500A751A0 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		F7E77E051D641448007EDED5 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		F7E77E061D641449007EDED5 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		F7FC612C1D6487E900C1D101 /* PBJVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayer.h; sourceTree = "<group>"; };
+		F7FC612D1D6487E900C1D101 /* PBJVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayerController.h; sourceTree = "<group>"; };
+		F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoPlayerController.m; sourceTree = "<group>"; };
+		F7FC612F1D6487E900C1D101 /* PBJVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoView.h; sourceTree = "<group>"; };
+		F7FC61301D6487E900C1D101 /* PBJVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoView.m; sourceTree = "<group>"; };
+		F7FC61331D6487F200C1D101 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7FC61371D64880800C1D101 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7FC61391D64881300C1D101 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7FC613B1D64885600C1D101 /* PBJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJViewController.h; path = "../../../Desktop/PBJVideoPlayer-master/Project/Player/PBJViewController.h"; sourceTree = "<group>"; };
+		F7FC613C1D64885600C1D101 /* PBJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJViewController.m; path = "../../../Desktop/PBJVideoPlayer-master/Project/Player/PBJViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FC613A1D64881300C1D101 /* Foundation.framework in Frameworks */,
+				F7FC61381D64880800C1D101 /* UIKit.framework in Frameworks */,
+				F7FC61361D6487FC00C1D101 /* CoreGraphics.framework in Frameworks */,
+				F7FC61341D6487F200C1D101 /* AVFoundation.framework in Frameworks */,
 				9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,10 +158,13 @@
 		5053735F1CACCD6400EADF55 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC612B1D6487E900C1D101 /* PBJvideoPlayer */,
 				F7E6EFD91D1B87F500A751A0 /* QRCodeVIewController */,
 				F77A0B871D123EB0002607E4 /* Router */,
 				505373631CACCD6400EADF55 /* AppDelegate.h */,
 				505373641CACCD6400EADF55 /* AppDelegate.m */,
+				F7FC613B1D64885600C1D101 /* PBJViewController.h */,
+				F7FC613C1D64885600C1D101 /* PBJViewController.m */,
 				5020E9C91CE96EE6005B65C4 /* SortViewController.h */,
 				5020E9CA1CE96EE6005B65C4 /* SortViewController.m */,
 				F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */,
@@ -150,6 +178,8 @@
 				5020E9D01CE99A65005B65C4 /* TestTableViewController.m */,
 				5020E9D21CE99DDF005B65C4 /* FirstTableViewCell.h */,
 				5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */,
+				F7E77E051D641448007EDED5 /* PlayVideoViewController.h */,
+				F7E77E061D641449007EDED5 /* PlayVideoViewController.m */,
 				5053736F1CACCD6400EADF55 /* Assets.xcassets */,
 				505373711CACCD6400EADF55 /* LaunchScreen.storyboard */,
 				505373741CACCD6400EADF55 /* Info.plist */,
@@ -188,6 +218,10 @@
 		9B0B2AC1D1EF432D9516C042 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC61391D64881300C1D101 /* Foundation.framework */,
+				F7FC61371D64880800C1D101 /* UIKit.framework */,
+				F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */,
+				F7FC61331D6487F200C1D101 /* AVFoundation.framework */,
 				F70560981D23D5FF00DB0617 /* libz.tbd */,
 				F70560941D23D2A100DB0617 /* Reveal.framework */,
 				158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */,
@@ -220,6 +254,18 @@
 				F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */,
 			);
 			path = QRCodeVIewController;
+			sourceTree = "<group>";
+		};
+		F7FC612B1D6487E900C1D101 /* PBJvideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC612C1D6487E900C1D101 /* PBJVideoPlayer.h */,
+				F7FC612D1D6487E900C1D101 /* PBJVideoPlayerController.h */,
+				F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */,
+				F7FC612F1D6487E900C1D101 /* PBJVideoView.h */,
+				F7FC61301D6487E900C1D101 /* PBJVideoView.m */,
+			);
+			path = PBJvideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,13 +449,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E77E071D641449007EDED5 /* PlayVideoViewController.m in Sources */,
 				5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */,
 				5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */,
+				F7FC613D1D64885600C1D101 /* PBJViewController.m in Sources */,
+				F7FC61311D6487E900C1D101 /* PBJVideoPlayerController.m in Sources */,
 				5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */,
 				5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */,
 				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
 				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
+				F7FC61321D6487E900C1D101 /* PBJVideoView.m in Sources */,
 				F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */,
 				F77A0B8A1D123EDB002607E4 /* Router.m in Sources */,
 				505373621CACCD6400EADF55 /* main.m in Sources */,
@@ -570,7 +620,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"MBProgressHUD\"",
 					"-framework",
 					"\"CoreGraphics\"",
 				);
@@ -599,7 +648,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"MBProgressHUD\"",
 					"-framework",
 					"\"CoreGraphics\"",
 				);

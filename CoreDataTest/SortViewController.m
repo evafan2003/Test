@@ -7,6 +7,7 @@
 //
 
 #import "SortViewController.h"
+#import "PBJViewController.h"
 
 @interface SortViewController ()
 
@@ -301,6 +302,9 @@
     NSMutableArray *array = _arr;
     NSLog(@"冒泡排序前：%@",array);
     //-------------------------------------------
+    
+    PBJViewController *vc = [[PBJViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
     //-------------------------------------------
     NSLog(@"选择排序后：%@",array);
