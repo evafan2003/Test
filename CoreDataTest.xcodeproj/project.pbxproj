@@ -21,6 +21,12 @@
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
 		9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */; };
+		F72D26821DED7F3100EA386A /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; };
+		F72D26831DED7F3100EA386A /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; };
+		F72D26841DED7F4800EA386A /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; };
+		F72D26851DED7F4800EA386A /* RSKImageCropper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F72D26871DED7F4C00EA386A /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; };
+		F72D26881DED7F4C00EA386A /* QBImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F77A0B8A1D123EDB002607E4 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B891D123EDB002607E4 /* Router.m */; };
 		F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */; };
 		F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */; };
@@ -50,6 +56,21 @@
 			remoteInfo = CoreDataTest;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F72D26861DED7F4800EA386A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F72D26851DED7F4800EA386A /* RSKImageCropper.framework in Embed Frameworks */,
+				F72D26881DED7F4C00EA386A /* QBImagePicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +103,8 @@
 		53309BF6EB1329D295B6AC2D /* Pods-CoreDataTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F70560941D23D2A100DB0617 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		F70560981D23D5FF00DB0617 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F72D26801DED7F3100EA386A /* QBImagePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = "<group>"; };
+		F72D26811DED7F3100EA386A /* RSKImageCropper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = "<group>"; };
 		F77A0B881D123EDB002607E4 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		F77A0B891D123EDB002607E4 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeMethod.h; sourceTree = "<group>"; };
@@ -111,8 +134,12 @@
 				F7FC613A1D64881300C1D101 /* Foundation.framework in Frameworks */,
 				F7FC61381D64880800C1D101 /* UIKit.framework in Frameworks */,
 				F7FC61361D6487FC00C1D101 /* CoreGraphics.framework in Frameworks */,
+				F72D26841DED7F4800EA386A /* RSKImageCropper.framework in Frameworks */,
+				F72D26831DED7F3100EA386A /* RSKImageCropper.framework in Frameworks */,
 				F7FC61341D6487F200C1D101 /* AVFoundation.framework in Frameworks */,
 				9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */,
+				F72D26821DED7F3100EA386A /* QBImagePicker.framework in Frameworks */,
+				F72D26871DED7F4C00EA386A /* QBImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +163,7 @@
 		505373541CACCD6300EADF55 = {
 			isa = PBXGroup;
 			children = (
+				F72D267F1DED7F3100EA386A /* ImageCropPickerSDK */,
 				5053735F1CACCD6400EADF55 /* CoreDataTest */,
 				5053737C1CACCD6400EADF55 /* CoreDataTestTests */,
 				505373871CACCD6400EADF55 /* CoreDataTestUITests */,
@@ -238,6 +266,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F72D267F1DED7F3100EA386A /* ImageCropPickerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F72D26801DED7F3100EA386A /* QBImagePicker.framework */,
+				F72D26811DED7F3100EA386A /* RSKImageCropper.framework */,
+			);
+			path = ImageCropPickerSDK;
+			sourceTree = "<group>";
+		};
 		F77A0B871D123EB0002607E4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +318,7 @@
 				5053735B1CACCD6300EADF55 /* Resources */,
 				1ED9C6F709CF68615E0C2160 /* [CP] Embed Pods Frameworks */,
 				2A66FC4378448D0EB5044E09 /* [CP] Copy Pods Resources */,
+				F72D26861DED7F4800EA386A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +376,8 @@
 				TargetAttributes = {
 					5053735C1CACCD6300EADF55 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = JAF6W279MB;
+						ProvisioningStyle = Manual;
 					};
 					505373781CACCD6400EADF55 = {
 						CreatedOnToolsVersion = 7.3;
@@ -606,9 +646,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JAF6W279MB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageCropPickerSDK",
 				);
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -625,6 +667,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosh.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ca0a920-ba4e-42df-aac1-4e0bc374b0ac";
+				PROVISIONING_PROFILE_SPECIFIER = AllDevelopProfile;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -635,9 +679,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JAF6W279MB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageCropPickerSDK",
 				);
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -653,6 +699,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosh.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ca0a920-ba4e-42df-aac1-4e0bc374b0ac";
+				PROVISIONING_PROFILE_SPECIFIER = AllDevelopProfile;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

@@ -10,6 +10,9 @@
 
 @interface FindViewController : UIViewController
 
+@property (nonatomic, strong) NSString *a;
+@property (nonatomic, strong) NSString *b;
+
 //九九乘法表
 - (IBAction)chengfabiao:(id)sender;
 

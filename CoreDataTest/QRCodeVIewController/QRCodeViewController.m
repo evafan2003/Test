@@ -7,6 +7,8 @@
 //
 
 #import "QRCodeViewController.h"
+#import "QBImagePicker/QBImagePicker.h"
+#import "RSKImageCropper/RSKImageCropper.h"
 
 @interface QRCodeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -156,14 +158,6 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
             [self.progressView setProgress:progress animated:YES];
         }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

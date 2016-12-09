@@ -9,7 +9,7 @@
 #import "FindViewController.h"
 
 @interface FindViewController ()
-
+@property (nonatomic, strong) UIImagePickerController *picker;
 @end
 
 @implementation FindViewController
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _picker = [[UIImagePickerController alloc] init];
+    _picker.allowsEditing = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -150,6 +152,16 @@
         [self newbianli:[NSArray arrayWithArray:tmparr]];
 }
 
+
+-(int) addWithA:(int)a B:(int)b{
+    if (b<30) {
+        b++;
+        NSLog(@"%d-%d",a,b);
+        a += [self addWithA:a B:b];
+    }
+    return a;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -163,17 +175,21 @@
 //九九乘法表
 - (IBAction)chengfabiao:(id)sender {
     
-    int x,y,z;
+    [self.navigationController pushViewController:_picker animated:YES];
     
-    for (x=1; x<=9; x++) {
-        
-        for (y=1; y<=x; y++) {
-            
-            z = x*y;
-            NSLog(@"%d*%d=%d",x,y,z);
-        }
-        NSLog(@"\n");
-    }
+//    [self addWithA:1 B:1];
+    
+//    int x,y,z;
+//    
+//    for (x=1; x<=9; x++) {
+//        
+//        for (y=1; y<=x; y++) {
+//            
+//            z = x*y;
+//            NSLog(@"%d*%d=%d",x,y,z);
+//        }
+//        NSLog(@"\n");
+//    }
 }
 
 -(void) erfen:(NSMutableArray *)array element:(NSString *)ele {
@@ -203,5 +219,4 @@
     NSLog(@"没找到");
     
 }
-
 @end
