@@ -2,11 +2,12 @@
 //  SortViewController.h
 //  CoreDataTest
 //
-//  Created by  evafan2003 on 16/5/16.
+//  Created by  ; on 16/5/16.
 //  Copyright © 2016年 com.mosh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "Router.h"
 
 @interface SortViewController : UIViewController
 
@@ -25,4 +26,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *orignal;
 @property (weak, nonatomic) IBOutlet UILabel *sorted;
 
+@property (nonatomic, strong) id MBProgressClass;
+@property (nonatomic, strong) id runtimeMethodClass;
 @end

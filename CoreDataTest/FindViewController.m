@@ -11,7 +11,7 @@
 #import "FowardObject+test.h"
 
 @interface FindViewController ()
-
+@property (nonatomic, strong) UIImagePickerController *picker;
 @end
 
 @implementation FindViewController
@@ -19,12 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+<<<<<<< HEAD
     
     FowardObject *ddd = [FowardObject new];
     ddd.target = self;
     [FowardObject aaaa];
 //    [ddd bbbb];
     
+=======
+    _picker = [[UIImagePickerController alloc] init];
+    _picker.allowsEditing = YES;
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 }
 
 - (void)didReceiveMemoryWarning {
@@ -148,9 +153,6 @@
 //递归遍历多维数组(广度)
 -(void) newbianli:(NSArray *) arr {
     
-    if(arr.count<1)
-        return;
-    
     NSMutableArray *tmparr = [NSMutableArray array];
     
     for(int i=0;i<arr.count;i++){
@@ -162,7 +164,18 @@
             NSLog(@"%@",arr[i]);
         }
     }
-    [self newbianli:[NSArray arrayWithArray:tmparr]];
+    if(tmparr.count<1)
+        [self newbianli:[NSArray arrayWithArray:tmparr]];
+}
+
+
+-(int) addWithA:(int)a B:(int)b{
+    if (b<30) {
+        b++;
+        NSLog(@"%d-%d",a,b);
+        a += [self addWithA:a B:b];
+    }
+    return a;
 }
 
 /*
@@ -175,4 +188,51 @@
 }
 */
 
+//九九乘法表
+- (IBAction)chengfabiao:(id)sender {
+    
+    [self.navigationController pushViewController:_picker animated:YES];
+    
+//    [self addWithA:1 B:1];
+    
+//    int x,y,z;
+//    
+//    for (x=1; x<=9; x++) {
+//        
+//        for (y=1; y<=x; y++) {
+//            
+//            z = x*y;
+//            NSLog(@"%d*%d=%d",x,y,z);
+//        }
+//        NSLog(@"\n");
+//    }
+}
+
+-(void) erfen:(NSMutableArray *)array element:(NSString *)ele {
+    
+    NSInteger low=0;
+    NSInteger high = array.count-1;
+    NSInteger mid;
+    
+    while (low<=high) {
+
+        mid = (low+high)/2;
+        
+        if ([array[mid] intValue] == [ele intValue]) {
+            
+            NSLog(@"找到");
+            return;
+            
+        } else if ([array[mid] intValue] > [ele intValue]) {
+            
+            high = mid+1;
+            
+        } else {
+            low = mid+1;
+        }
+        
+    }
+    NSLog(@"没找到");
+    
+}
 @end

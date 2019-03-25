@@ -7,6 +7,7 @@
 //
 
 #import "SortViewController.h"
+#import "PBJViewController.h"
 
 @interface SortViewController () {
 
@@ -35,7 +36,18 @@
     NSString *str = [_arr componentsJoinedByString:@","];
     _orignal.text = [NSString stringWithFormat:@"排序前数组：%@",str];
     
+<<<<<<< HEAD
     _dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"a",@"111",@"b",@"222",@"c",@"333",@"d",@"444", nil];
+=======
+    _runtimeMethodClass = [Router runtimeClass:@"RuntimeMethod"];
+    if (_runtimeMethodClass) {
+        
+        [_runtimeMethodClass performSelector:@selector(aaaa:bbbb:)withObject:@"haha" withObject:@"hoho"];
+        
+//        [_runtimeMethodClass performSelector:@selector(stringmethod:intmethod:)withObject:@"haha" withObject:@"1"];
+
+    }
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
     
 }
 
@@ -214,10 +226,18 @@
     NSLog(@"冒泡排序前：%@",array);
     for (int i=0; i<array.count; i++) {
         //-------------------------------------------
-        
+        for (int j=i+1; j<array.count; j++) {
+            if ([array[i] intValue]>[array[j] intValue]) {
+                NSString *str = array[i];
+                array[i] = array[j];
+                array[j] = str;
+            }
+        }
         //-------------------------------------------
     }
     NSLog(@"冒泡排序后：%@",array);
+    NSString *str = [array componentsJoinedByString:@","];
+    _sorted.text = [NSString stringWithFormat:@"排序后数组：%@",str];
 }
 
 //选择
@@ -289,6 +309,9 @@
     NSMutableArray *array = _arr;
     NSLog(@"冒泡排序前：%@",array);
     //-------------------------------------------
+    
+    PBJViewController *vc = [[PBJViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
     //-------------------------------------------
     NSLog(@"选择排序后：%@",array);

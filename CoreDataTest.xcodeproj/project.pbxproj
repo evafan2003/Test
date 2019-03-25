@@ -20,11 +20,32 @@
 		505373731CACCD6400EADF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505373711CACCD6400EADF55 /* LaunchScreen.storyboard */; };
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
+<<<<<<< HEAD
 		663ED16E222F849E00E39C22 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663ED16D222F849E00E39C22 /* TimerProxy.m */; };
 		6684E3F6222F723B0036A950 /* FowardObject+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6684E3F5222F723B0036A950 /* FowardObject+test.m */; };
 		6684E3F9222F7E5C0036A950 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6684E3F8222F7E5C0036A950 /* TimerViewController.m */; };
 		66A3BF2A222E4BD900C1CBD1 /* FowardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A3BF29222E4BD900C1CBD1 /* FowardObject.m */; };
 		66F198BD222F89B90008DFE0 /* NSTimer+CustomTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F198BC222F89B90008DFE0 /* NSTimer+CustomTimer.m */; };
+=======
+		9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */; };
+		F72D26821DED7F3100EA386A /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; };
+		F72D26831DED7F3100EA386A /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; };
+		F72D26841DED7F4800EA386A /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; };
+		F72D26851DED7F4800EA386A /* RSKImageCropper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26811DED7F3100EA386A /* RSKImageCropper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F72D26871DED7F4C00EA386A /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; };
+		F72D26881DED7F4C00EA386A /* QBImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F72D26801DED7F3100EA386A /* QBImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F77A0B8A1D123EDB002607E4 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B891D123EDB002607E4 /* Router.m */; };
+		F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */; };
+		F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */; };
+		F7E77E071D641449007EDED5 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E77E061D641449007EDED5 /* PlayVideoViewController.m */; };
+		F7FC61311D6487E900C1D101 /* PBJVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */; };
+		F7FC61321D6487E900C1D101 /* PBJVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC61301D6487E900C1D101 /* PBJVideoView.m */; };
+		F7FC61341D6487F200C1D101 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61331D6487F200C1D101 /* AVFoundation.framework */; };
+		F7FC61361D6487FC00C1D101 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */; };
+		F7FC61381D64880800C1D101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61371D64880800C1D101 /* UIKit.framework */; };
+		F7FC613A1D64881300C1D101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC61391D64881300C1D101 /* Foundation.framework */; };
+		F7FC613D1D64885600C1D101 /* PBJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC613C1D64885600C1D101 /* PBJViewController.m */; };
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +65,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F72D26861DED7F4800EA386A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F72D26851DED7F4800EA386A /* RSKImageCropper.framework in Embed Frameworks */,
+				F72D26881DED7F4C00EA386A /* QBImagePicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA1D910A7D9C36D819F07C2 /* Pods-CoreDataTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest.release.xcconfig"; sourceTree = "<group>"; };
 		5020E9C31CE96E30005B65C4 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
 		5020E9C41CE96E30005B65C4 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		5020E9C61CE96E89005B65C4 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
@@ -70,6 +108,7 @@
 		505373841CACCD6400EADF55 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505373881CACCD6400EADF55 /* CoreDataTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestUITests.m; sourceTree = "<group>"; };
 		5053738A1CACCD6400EADF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		663ED16C222F849E00E39C22 /* TimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
 		663ED16D222F849E00E39C22 /* TimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
 		6684E3F4222F723B0036A950 /* FowardObject+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FowardObject+test.h"; sourceTree = "<group>"; };
@@ -80,6 +119,32 @@
 		66A3BF29222E4BD900C1CBD1 /* FowardObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FowardObject.m; sourceTree = "<group>"; };
 		66F198BB222F89B90008DFE0 /* NSTimer+CustomTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CustomTimer.h"; sourceTree = "<group>"; };
 		66F198BC222F89B90008DFE0 /* NSTimer+CustomTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CustomTimer.m"; sourceTree = "<group>"; };
+=======
+		53309BF6EB1329D295B6AC2D /* Pods-CoreDataTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F70560941D23D2A100DB0617 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		F70560981D23D5FF00DB0617 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F72D26801DED7F3100EA386A /* QBImagePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = "<group>"; };
+		F72D26811DED7F3100EA386A /* RSKImageCropper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = "<group>"; };
+		F77A0B881D123EDB002607E4 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		F77A0B891D123EDB002607E4 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeMethod.h; sourceTree = "<group>"; };
+		F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeMethod.m; sourceTree = "<group>"; };
+		F7E6EFDA1D1B87F500A751A0 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		F7E77E051D641448007EDED5 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		F7E77E061D641449007EDED5 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		F7FC612C1D6487E900C1D101 /* PBJVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayer.h; sourceTree = "<group>"; };
+		F7FC612D1D6487E900C1D101 /* PBJVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayerController.h; sourceTree = "<group>"; };
+		F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoPlayerController.m; sourceTree = "<group>"; };
+		F7FC612F1D6487E900C1D101 /* PBJVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoView.h; sourceTree = "<group>"; };
+		F7FC61301D6487E900C1D101 /* PBJVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoView.m; sourceTree = "<group>"; };
+		F7FC61331D6487F200C1D101 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7FC61371D64880800C1D101 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7FC61391D64881300C1D101 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7FC613B1D64885600C1D101 /* PBJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJViewController.h; path = "../../../Desktop/PBJVideoPlayer-master/Project/Player/PBJViewController.h"; sourceTree = "<group>"; };
+		F7FC613C1D64885600C1D101 /* PBJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJViewController.m; path = "../../../Desktop/PBJVideoPlayer-master/Project/Player/PBJViewController.m"; sourceTree = "<group>"; };
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +152,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FC613A1D64881300C1D101 /* Foundation.framework in Frameworks */,
+				F7FC61381D64880800C1D101 /* UIKit.framework in Frameworks */,
+				F7FC61361D6487FC00C1D101 /* CoreGraphics.framework in Frameworks */,
+				F72D26841DED7F4800EA386A /* RSKImageCropper.framework in Frameworks */,
+				F72D26831DED7F3100EA386A /* RSKImageCropper.framework in Frameworks */,
+				F7FC61341D6487F200C1D101 /* AVFoundation.framework in Frameworks */,
+				9467513C617D89AFCD1DCD7F /* libPods-CoreDataTest.a in Frameworks */,
+				F72D26821DED7F3100EA386A /* QBImagePicker.framework in Frameworks */,
+				F72D26871DED7F4C00EA386A /* QBImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +184,13 @@
 		505373541CACCD6300EADF55 = {
 			isa = PBXGroup;
 			children = (
+				F72D267F1DED7F3100EA386A /* ImageCropPickerSDK */,
 				5053735F1CACCD6400EADF55 /* CoreDataTest */,
 				5053737C1CACCD6400EADF55 /* CoreDataTestTests */,
 				505373871CACCD6400EADF55 /* CoreDataTestUITests */,
 				5053735E1CACCD6300EADF55 /* Products */,
+				A7D57AC478BD8E0E2243D2B3 /* Pods */,
+				9B0B2AC1D1EF432D9516C042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,10 +207,17 @@
 		5053735F1CACCD6400EADF55 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC612B1D6487E900C1D101 /* PBJvideoPlayer */,
+				F7E6EFD91D1B87F500A751A0 /* QRCodeVIewController */,
+				F77A0B871D123EB0002607E4 /* Router */,
 				505373631CACCD6400EADF55 /* AppDelegate.h */,
 				505373641CACCD6400EADF55 /* AppDelegate.m */,
+				F7FC613B1D64885600C1D101 /* PBJViewController.h */,
+				F7FC613C1D64885600C1D101 /* PBJViewController.m */,
 				5020E9C91CE96EE6005B65C4 /* SortViewController.h */,
 				5020E9CA1CE96EE6005B65C4 /* SortViewController.m */,
+				F77A0B8B1D1246E4002607E4 /* RuntimeMethod.h */,
+				F77A0B8C1D1246E4002607E4 /* RuntimeMethod.m */,
 				505373691CACCD6400EADF55 /* Main.storyboard */,
 				5020E9C31CE96E30005B65C4 /* FindViewController.h */,
 				5020E9C41CE96E30005B65C4 /* FindViewController.m */,
@@ -143,7 +227,12 @@
 				5020E9D01CE99A65005B65C4 /* TestTableViewController.m */,
 				5020E9D21CE99DDF005B65C4 /* FirstTableViewCell.h */,
 				5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */,
+<<<<<<< HEAD
 				663ED16F222F84A200E39C22 /* TImer */,
+=======
+				F7E77E051D641448007EDED5 /* PlayVideoViewController.h */,
+				F7E77E061D641449007EDED5 /* PlayVideoViewController.m */,
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 				5053736F1CACCD6400EADF55 /* Assets.xcassets */,
 				505373711CACCD6400EADF55 /* LaunchScreen.storyboard */,
 				505373741CACCD6400EADF55 /* Info.plist */,
@@ -183,6 +272,7 @@
 			path = CoreDataTestUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		663ED16F222F84A200E39C22 /* TImer */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +284,68 @@
 				663ED16D222F849E00E39C22 /* TimerProxy.m */,
 			);
 			name = TImer;
+=======
+		9B0B2AC1D1EF432D9516C042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC61391D64881300C1D101 /* Foundation.framework */,
+				F7FC61371D64880800C1D101 /* UIKit.framework */,
+				F7FC61351D6487FC00C1D101 /* CoreGraphics.framework */,
+				F7FC61331D6487F200C1D101 /* AVFoundation.framework */,
+				F70560981D23D5FF00DB0617 /* libz.tbd */,
+				F70560941D23D2A100DB0617 /* Reveal.framework */,
+				158D4D28BC3F13599D1EAFD4 /* libPods-CoreDataTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7D57AC478BD8E0E2243D2B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53309BF6EB1329D295B6AC2D /* Pods-CoreDataTest.debug.xcconfig */,
+				4FA1D910A7D9C36D819F07C2 /* Pods-CoreDataTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F72D267F1DED7F3100EA386A /* ImageCropPickerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F72D26801DED7F3100EA386A /* QBImagePicker.framework */,
+				F72D26811DED7F3100EA386A /* RSKImageCropper.framework */,
+			);
+			path = ImageCropPickerSDK;
+			sourceTree = "<group>";
+		};
+		F77A0B871D123EB0002607E4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F77A0B881D123EDB002607E4 /* Router.h */,
+				F77A0B891D123EDB002607E4 /* Router.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F7E6EFD91D1B87F500A751A0 /* QRCodeVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7E6EFDA1D1B87F500A751A0 /* QRCodeViewController.h */,
+				F7E6EFDB1D1B87F500A751A0 /* QRCodeViewController.m */,
+			);
+			path = QRCodeVIewController;
+			sourceTree = "<group>";
+		};
+		F7FC612B1D6487E900C1D101 /* PBJvideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F7FC612C1D6487E900C1D101 /* PBJVideoPlayer.h */,
+				F7FC612D1D6487E900C1D101 /* PBJVideoPlayerController.h */,
+				F7FC612E1D6487E900C1D101 /* PBJVideoPlayerController.m */,
+				F7FC612F1D6487E900C1D101 /* PBJVideoView.h */,
+				F7FC61301D6487E900C1D101 /* PBJVideoView.m */,
+			);
+			path = PBJvideoPlayer;
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +355,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5053738D1CACCD6400EADF55 /* Build configuration list for PBXNativeTarget "CoreDataTest" */;
 			buildPhases = (
+				EB6C5EBA1C90AC36B2085E4A /* [CP] Check Pods Manifest.lock */,
 				505373591CACCD6300EADF55 /* Sources */,
 				5053735A1CACCD6300EADF55 /* Frameworks */,
 				5053735B1CACCD6300EADF55 /* Resources */,
+				1ED9C6F709CF68615E0C2160 /* [CP] Embed Pods Frameworks */,
+				2A66FC4378448D0EB5044E09 /* [CP] Copy Pods Resources */,
+				F72D26861DED7F4800EA386A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +419,8 @@
 				TargetAttributes = {
 					5053735C1CACCD6300EADF55 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = JAF6W279MB;
+						ProvisioningStyle = Manual;
 					};
 					505373781CACCD6400EADF55 = {
 						CreatedOnToolsVersion = 7.3;
@@ -321,15 +479,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1ED9C6F709CF68615E0C2160 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A66FC4378448D0EB5044E09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreDataTest/Pods-CoreDataTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6C5EBA1C90AC36B2085E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		505373591CACCD6300EADF55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				6684E3F9222F7E5C0036A950 /* TimerViewController.m in Sources */,
 				66F198BD222F89B90008DFE0 /* NSTimer+CustomTimer.m in Sources */,
+=======
+				F7E77E071D641449007EDED5 /* PlayVideoViewController.m in Sources */,
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 				5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */,
 				5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */,
+				F7FC613D1D64885600C1D101 /* PBJViewController.m in Sources */,
+				F7FC61311D6487E900C1D101 /* PBJVideoPlayerController.m in Sources */,
 				5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */,
 				5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */,
 				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
@@ -337,8 +549,15 @@
 				6684E3F6222F723B0036A950 /* FowardObject+test.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
 				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
+<<<<<<< HEAD
 				66A3BF2A222E4BD900C1CBD1 /* FowardObject.m in Sources */,
+=======
+				F7FC61321D6487E900C1D101 /* PBJVideoView.m in Sources */,
+				F7E6EFDC1D1B87F500A751A0 /* QRCodeViewController.m in Sources */,
+				F77A0B8A1D123EDB002607E4 /* Router.m in Sources */,
+>>>>>>> ec778439677d2e39c44babe1cd38aa4360f9631b
 				505373621CACCD6400EADF55 /* main.m in Sources */,
+				F77A0B8D1D1246E4002607E4 /* RuntimeMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,23 +696,66 @@
 		};
 		5053738E1CACCD6400EADF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53309BF6EB1329D295B6AC2D /* Pods-CoreDataTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JAF6W279MB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageCropPickerSDK",
+				);
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosh.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ca0a920-ba4e-42df-aac1-4e0bc374b0ac";
+				PROVISIONING_PROFILE_SPECIFIER = AllDevelopProfile;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
 		5053738F1CACCD6400EADF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA1D910A7D9C36D819F07C2 /* Pods-CoreDataTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JAF6W279MB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageCropPickerSDK",
+				);
 				INFOPLIST_FILE = CoreDataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosh.CoreDataTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5ca0a920-ba4e-42df-aac1-4e0bc374b0ac";
+				PROVISIONING_PROFILE_SPECIFIER = AllDevelopProfile;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
