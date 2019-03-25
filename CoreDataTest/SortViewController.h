@@ -13,7 +13,7 @@
 
 @property (nonatomic,strong) NSMutableArray *arr;
 @property (nonatomic,strong) NSArray *array;
-
+@property (nonatomic,strong) NSDictionary *dictionary;
 - (IBAction)maopao:(id)sender;
 - (IBAction)xuanze:(id)sender;
 - (IBAction)charu:(id)sender;

@@ -20,6 +20,11 @@
 		505373731CACCD6400EADF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505373711CACCD6400EADF55 /* LaunchScreen.storyboard */; };
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
+		663ED16E222F849E00E39C22 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663ED16D222F849E00E39C22 /* TimerProxy.m */; };
+		6684E3F6222F723B0036A950 /* FowardObject+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6684E3F5222F723B0036A950 /* FowardObject+test.m */; };
+		6684E3F9222F7E5C0036A950 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6684E3F8222F7E5C0036A950 /* TimerViewController.m */; };
+		66A3BF2A222E4BD900C1CBD1 /* FowardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A3BF29222E4BD900C1CBD1 /* FowardObject.m */; };
+		66F198BD222F89B90008DFE0 /* NSTimer+CustomTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F198BC222F89B90008DFE0 /* NSTimer+CustomTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,16 @@
 		505373841CACCD6400EADF55 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505373881CACCD6400EADF55 /* CoreDataTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestUITests.m; sourceTree = "<group>"; };
 		5053738A1CACCD6400EADF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663ED16C222F849E00E39C22 /* TimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
+		663ED16D222F849E00E39C22 /* TimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
+		6684E3F4222F723B0036A950 /* FowardObject+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FowardObject+test.h"; sourceTree = "<group>"; };
+		6684E3F5222F723B0036A950 /* FowardObject+test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FowardObject+test.m"; sourceTree = "<group>"; };
+		6684E3F7222F7E5C0036A950 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		6684E3F8222F7E5C0036A950 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		66A3BF28222E4BD900C1CBD1 /* FowardObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FowardObject.h; sourceTree = "<group>"; };
+		66A3BF29222E4BD900C1CBD1 /* FowardObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FowardObject.m; sourceTree = "<group>"; };
+		66F198BB222F89B90008DFE0 /* NSTimer+CustomTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CustomTimer.h"; sourceTree = "<group>"; };
+		66F198BC222F89B90008DFE0 /* NSTimer+CustomTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CustomTimer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +143,16 @@
 				5020E9D01CE99A65005B65C4 /* TestTableViewController.m */,
 				5020E9D21CE99DDF005B65C4 /* FirstTableViewCell.h */,
 				5020E9D31CE99DDF005B65C4 /* FirstTableViewCell.m */,
+				663ED16F222F84A200E39C22 /* TImer */,
 				5053736F1CACCD6400EADF55 /* Assets.xcassets */,
 				505373711CACCD6400EADF55 /* LaunchScreen.storyboard */,
 				505373741CACCD6400EADF55 /* Info.plist */,
 				5053736C1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld */,
 				505373601CACCD6400EADF55 /* Supporting Files */,
+				66A3BF28222E4BD900C1CBD1 /* FowardObject.h */,
+				66A3BF29222E4BD900C1CBD1 /* FowardObject.m */,
+				6684E3F4222F723B0036A950 /* FowardObject+test.h */,
+				6684E3F5222F723B0036A950 /* FowardObject+test.m */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
@@ -161,6 +181,19 @@
 				5053738A1CACCD6400EADF55 /* Info.plist */,
 			);
 			path = CoreDataTestUITests;
+			sourceTree = "<group>";
+		};
+		663ED16F222F84A200E39C22 /* TImer */ = {
+			isa = PBXGroup;
+			children = (
+				6684E3F7222F7E5C0036A950 /* TimerViewController.h */,
+				6684E3F8222F7E5C0036A950 /* TimerViewController.m */,
+				66F198BB222F89B90008DFE0 /* NSTimer+CustomTimer.h */,
+				66F198BC222F89B90008DFE0 /* NSTimer+CustomTimer.m */,
+				663ED16C222F849E00E39C22 /* TimerProxy.h */,
+				663ED16D222F849E00E39C22 /* TimerProxy.m */,
+			);
+			name = TImer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,13 +326,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6684E3F9222F7E5C0036A950 /* TimerViewController.m in Sources */,
+				66F198BD222F89B90008DFE0 /* NSTimer+CustomTimer.m in Sources */,
 				5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */,
 				5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */,
 				5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */,
 				5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */,
 				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
+				663ED16E222F849E00E39C22 /* TimerProxy.m in Sources */,
+				6684E3F6222F723B0036A950 /* FowardObject+test.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
 				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
+				66A3BF2A222E4BD900C1CBD1 /* FowardObject.m in Sources */,
 				505373621CACCD6400EADF55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

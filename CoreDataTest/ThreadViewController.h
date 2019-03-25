@@ -10,7 +10,8 @@
 
 @interface ThreadViewController : UIViewController
 
+- (IBAction)threadStart:(id)sender;
 @property (nonatomic,strong) NSMutableArray *arr;
 @property (nonatomic,strong) NSArray *array;
-
+@property (nonatomic,strong) NSDictionary*dictionary;
 @end

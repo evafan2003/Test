@@ -7,6 +7,8 @@
 //
 
 #import "FindViewController.h"
+#import "FowardObject.h"
+#import "FowardObject+test.h"
 
 @interface FindViewController ()
 
@@ -17,12 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    FowardObject *ddd = [FowardObject new];
+    ddd.target = self;
+    [FowardObject aaaa];
+//    [ddd bbbb];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) bbbb {
+    NSLog(@"bbbb");
+}
+
 
 //二分查找
 -(void) binarySearch:(NSMutableArray *)array element:(NSString *)ele {

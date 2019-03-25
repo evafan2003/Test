@@ -24,6 +24,8 @@
     _arr = [NSMutableArray arrayWithArray:@[@"92",@"76",@"123",@"8",@"38",@"55",@"23",@"43"]];
     
     _array = @[@"92",@"76",@"123",@[@"z",@"y",@"x",@[@"6",@"6",@"6",@"6",@"6"],@"v",@"u",@"q",],@"38",@"55",@"23",@"43",@[@"a",@"b",@"c",@"d",@"e",@"f",@"g",]];
+    _dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"a",@"wa", nil];
+    [self addObservation];
     
 }
 
@@ -67,6 +69,46 @@
         }
     }
 }
+
+
+//kvo和kvc的练习
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    if([key isEqualToString:@"nameXXX"])
+        self.dictionary = value;
+    if([key isEqualToString:@"ageXXX"])
+        self.dictionary = value;
+    else
+        [super setValue:value forKey:key];
+    
+    [_array valueForKeyPath:@"name.capitalizedString"];
+}
+
+//kvo练习
+- (void)removeObservation {
+    [_dictionary removeObserver:self
+                     forKeyPath:@"change"];
+}
+
+- (void)addObservation {
+    [_dictionary addObserver:self forKeyPath:@"change"
+                     options:0
+                     context:(__bridge void*)self];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context {
+    if ((__bridge id)context == self) {
+        // 只处理跟我们当前class的property更新
+    }
+    else {
+        [super observeValueForKeyPath:keyPath ofObject:object
+                               change:change context:context];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
@@ -77,4 +119,8 @@
 }
 */
 
+- (IBAction)threadStart:(id)sender {
+//    [_dictionary setValue:@"1" forUndefinedKey:@"wa"];
+//    [self setValue:[NSDictionary dictionary] forKey:@"dictionary"];
+}
 @end

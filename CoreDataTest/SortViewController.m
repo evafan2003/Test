@@ -8,7 +8,9 @@
 
 #import "SortViewController.h"
 
-@interface SortViewController ()
+@interface SortViewController () {
+
+}
 
 @end
 
@@ -32,6 +34,8 @@
     _array = @[@"92",@"76",@"123",@[@"z",@"y",@"x",@[@"6",@"6",@"6",@"6",@"6"],@"v",@"u",@"q",],@"38",@"55",@"23",@"43",@[@"a",@"b",@"c",@"d",@"e",@"f",@"g",]];
     NSString *str = [_arr componentsJoinedByString:@","];
     _orignal.text = [NSString stringWithFormat:@"排序前数组：%@",str];
+    
+    _dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"a",@"111",@"b",@"222",@"c",@"333",@"d",@"444", nil];
     
 }
 
@@ -245,6 +249,7 @@
     NSLog(@"冒泡排序前：%@",array);
     //-------------------------------------------
     
+    
     //-------------------------------------------
     NSLog(@"选择排序后：%@",array);
 }
@@ -288,6 +293,7 @@
     //-------------------------------------------
     NSLog(@"选择排序后：%@",array);
 }
+
 
 /*
 #pragma mark - Navigation

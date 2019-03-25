@@ -8,6 +8,7 @@
 
 #import "TestTableViewController.h"
 #import "FirstTableViewCell.h"
+#import "FowardObject.h"
 
 @interface TestTableViewController ()
 
@@ -24,11 +25,27 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+//    FowardObject *fow = [[FowardObject alloc] init];
+//    fow.target = self;
+//    [fow addTimer:@selector(timer) userInfo:nil];
+    
+    
+    
+    
     _dataArr = @[@"aa",@"bb",@"cc",@"dd",@"ee",@"ff",@"gg",@"hh",@"ii",@"jj",@"kk",];
     _rowNumber = _dataArr.count;
 //    _rowHeight = 80;
     
     self.tableView.rowHeight =80;
+    
+    
+    
+    
+}
+
+
+-(void) timer {
+    NSLog(@"asdsadasdsadsa");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,5 +120,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) dealloc {
+    NSLog(@"dealloc");
+}
+
+
+-(void) quchong {
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
+    arr = [@[@(3),@(1),@(2),@(5),@(4),@(1),@(3),@(6),@(5)] mutableCopy];
+    
+    
+    
+}
 
 @end
