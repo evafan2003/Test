@@ -13,4 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *detail;
 
+
+@property (assign, nonatomic) int rowCount;
+@property (assign, nonatomic) int count;
+-(void) fire;
+
 @end

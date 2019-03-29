@@ -17,14 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@" ");
-    NSLog(@"this is a thread test ~~~~");
-    NSLog(@" ");
     //make an array
     _arr = [NSMutableArray arrayWithArray:@[@"92",@"76",@"123",@"8",@"38",@"55",@"23",@"43"]];
     
     _array = @[@"92",@"76",@"123",@[@"z",@"y",@"x",@[@"6",@"6",@"6",@"6",@"6"],@"v",@"u",@"q",],@"38",@"55",@"23",@"43",@[@"a",@"b",@"c",@"d",@"e",@"f",@"g",]];
     
+//    dispatch_sync(dispatch_queue_create("queue", NULL), ^{
+//        NSLog(@"123");
+//    });
+//    NSLog(@"456");
+    
+    
+//    dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+//    dispatch_source_set_timer(source, DISPATCH_TIME_NOW, 2.0*NSEC_PER_SEC, 0*NSEC_PER_SEC);
+//    dispatch_source_set_event_handler(source, ^{
+//        NSLog(@"dispatch_source_t");
+//    });
+//    dispatch_resume(source);
+    
+    [self maxConcurrent];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +44,6 @@
 }
 
 - (IBAction)threadstart:(id)sender {
-    NSLog(@"this is a thread test ~~~~");
     //实例化一个 NSThread对象
     NSThread *t1 = [[NSThread alloc]initWithTarget:self selector:@selector(longOperation:)object:@"NSThread"];
     [t1 setName:@"new thread"];
@@ -76,5 +86,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//用信号量控制并发数
+-(void) maxConcurrent {
+
+    dispatch_semaphore_t semaphre = dispatch_semaphore_create(3);
+    
+    dispatch_apply(10, dispatch_get_global_queue(0, 0), ^(size_t index){
+        dispatch_semaphore_wait(semaphre, DISPATCH_TIME_FOREVER);
+        sleep(2);
+        NSLog(@"%@", [NSString stringWithFormat:@"-------- %zu  thread : %@",index,[NSThread currentThread]]);
+        dispatch_semaphore_signal(semaphre);
+    });
+}
 
 @end

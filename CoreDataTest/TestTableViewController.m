@@ -9,11 +9,20 @@
 #import "TestTableViewController.h"
 #import "FirstTableViewCell.h"
 
-@interface TestTableViewController ()
+@interface TestTableViewController () {
+    CADisplayLink *link;
+}
 
 @end
 
 @implementation TestTableViewController
+
+-(void) didMoveToParentViewController:(UIViewController *)parent {
+    //在这里
+        if (!parent) {
+            [link invalidate];
+        }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +38,9 @@
 //    _rowHeight = 80;
     
     self.tableView.rowHeight =80;
+    
+    
+    [self tableviewTimer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +66,8 @@
     FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FirstCell" forIndexPath:indexPath];
     NSString *string = _dataArr[indexPath.row];
     cell.title.text = string;
-    cell.detail.text = [NSString stringWithFormat:@"这里展示的是%@的描述",string];
+//    cell.detail.text = [NSString stringWithFormat:@"这里展示的是%@的描述",string];
+    cell.rowCount = (int)indexPath.row;
     // Configure the cell...
     return cell;
 }
@@ -104,4 +117,14 @@
 }
 */
 
+-(void) tableviewTimer {
+
+    link = [CADisplayLink displayLinkWithTarget:self selector:@selector(fire)];
+    link.frameInterval = 60;//设置间隔的frameInterval属性，其决定于屏幕刷新多少帧时调用一次该方法，默认为1，即1/60秒调用一次
+    [link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+}
+
+-(void) fire {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"cell fire" object:nil];
+}
 @end

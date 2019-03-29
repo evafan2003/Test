@@ -7,6 +7,7 @@
 //
 
 #import "SortViewController.h"
+#import "CalculatorMaker.h"
 
 @interface SortViewController ()
 
@@ -22,9 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@" ");
-    NSLog(@"this is a thread test ~~~~");
-    NSLog(@" ");
     
     //make an array
     _arr = [NSMutableArray arrayWithArray:@[@"92",@"76",@"123",@"8",@"38",@"55",@"23",@"43"]];
@@ -32,6 +30,11 @@
     _array = @[@"92",@"76",@"123",@[@"z",@"y",@"x",@[@"6",@"6",@"6",@"6",@"6"],@"v",@"u",@"q",],@"38",@"55",@"23",@"43",@[@"a",@"b",@"c",@"d",@"e",@"f",@"g",]];
     NSString *str = [_arr componentsJoinedByString:@","];
     _orignal.text = [NSString stringWithFormat:@"排序前数组：%@",str];
+    
+    
+//    CalculatorMaker *maker = [[CalculatorMaker alloc] init];
+//    maker.add(1).add(1);
+//    NSLog(@"%d",maker.result);
     
 }
 
@@ -298,4 +301,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
 @end

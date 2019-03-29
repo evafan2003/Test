@@ -20,6 +20,10 @@
 		505373731CACCD6400EADF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505373711CACCD6400EADF55 /* LaunchScreen.storyboard */; };
 		5053737E1CACCD6400EADF55 /* CoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053737D1CACCD6400EADF55 /* CoreDataTestTests.m */; };
 		505373891CACCD6400EADF55 /* CoreDataTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505373881CACCD6400EADF55 /* CoreDataTestUITests.m */; };
+		6644B003224D08F900998985 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6644B002224D08F900998985 /* CalculatorMaker.m */; };
+		6644B006224DCB0A00998985 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6644B005224DCB0900998985 /* TimerProxy.m */; };
+		6644B009224DCB1E00998985 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6644B007224DCB1D00998985 /* TimerViewController.m */; };
+		6644B00C224DF22900998985 /* NSTimer+CustomTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6644B00A224DF22800998985 /* NSTimer+CustomTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,14 @@
 		505373841CACCD6400EADF55 /* CoreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505373881CACCD6400EADF55 /* CoreDataTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestUITests.m; sourceTree = "<group>"; };
 		5053738A1CACCD6400EADF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6644B001224D08F900998985 /* CalculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorMaker.h; sourceTree = "<group>"; };
+		6644B002224D08F900998985 /* CalculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
+		6644B004224DCB0900998985 /* TimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
+		6644B005224DCB0900998985 /* TimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
+		6644B007224DCB1D00998985 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		6644B008224DCB1D00998985 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		6644B00A224DF22800998985 /* NSTimer+CustomTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CustomTimer.m"; sourceTree = "<group>"; };
+		6644B00B224DF22900998985 /* NSTimer+CustomTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CustomTimer.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,12 @@
 		5053735F1CACCD6400EADF55 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				6644B00B224DF22900998985 /* NSTimer+CustomTimer.h */,
+				6644B00A224DF22800998985 /* NSTimer+CustomTimer.m */,
+				6644B008224DCB1D00998985 /* TimerViewController.h */,
+				6644B007224DCB1D00998985 /* TimerViewController.m */,
+				6644B004224DCB0900998985 /* TimerProxy.h */,
+				6644B005224DCB0900998985 /* TimerProxy.m */,
 				505373631CACCD6400EADF55 /* AppDelegate.h */,
 				505373641CACCD6400EADF55 /* AppDelegate.m */,
 				5020E9C91CE96EE6005B65C4 /* SortViewController.h */,
@@ -133,6 +151,8 @@
 				505373741CACCD6400EADF55 /* Info.plist */,
 				5053736C1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld */,
 				505373601CACCD6400EADF55 /* Supporting Files */,
+				6644B001224D08F900998985 /* CalculatorMaker.h */,
+				6644B002224D08F900998985 /* CalculatorMaker.m */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
@@ -293,11 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6644B009224DCB1E00998985 /* TimerViewController.m in Sources */,
+				6644B00C224DF22900998985 /* NSTimer+CustomTimer.m in Sources */,
+				6644B006224DCB0A00998985 /* TimerProxy.m in Sources */,
 				5020E9C81CE96E89005B65C4 /* ThreadViewController.m in Sources */,
 				5053736E1CACCD6400EADF55 /* CoreDataTest.xcdatamodeld in Sources */,
 				5020E9D41CE99DDF005B65C4 /* FirstTableViewCell.m in Sources */,
 				5020E9C51CE96E30005B65C4 /* FindViewController.m in Sources */,
 				5020E9CB1CE96EE6005B65C4 /* SortViewController.m in Sources */,
+				6644B003224D08F900998985 /* CalculatorMaker.m in Sources */,
 				505373651CACCD6400EADF55 /* AppDelegate.m in Sources */,
 				5020E9D11CE99A65005B65C4 /* TestTableViewController.m in Sources */,
 				505373621CACCD6400EADF55 /* main.m in Sources */,
